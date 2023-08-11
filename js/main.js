@@ -33,6 +33,7 @@ return data
 
 formElement.addEventListener("submit",(e)=>{
     e.preventDefault()
+    result.classList.remove('dis') 
     const res=formElement.city.value.trim()
     formElement.reset()
 console.log(res);

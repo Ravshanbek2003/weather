@@ -4,7 +4,9 @@ const KEY='96b947a45d33d7dc1c49af3203966408'
 
 
 const getData =async (city)=>{
-    const result= document.querySelector(".result").innerHTML=`
+    const result= document.querySelector(".result")
+    result.classList.remove('dis') 
+    result.innerHTML=`
     <style>
     .loader {
         width: 48px;
